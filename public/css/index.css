@@ -1,0 +1,281 @@
+body{
+    margin: 0;
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+}
+.signupbox{
+    height: 29em;
+    width: 20em;
+    margin: auto;
+    margin-top: 20vh;
+    box-shadow: 0 0 18px 5px #151515;
+    border-style: none;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+.signup-form{
+    padding-left: 8%;
+    padding-top: 2%;
+}
+.signup-body{
+    background-color: rgb(27, 29, 27);
+}
+
+.signupfname,.signuplname,.signuppassword,.signupemail{
+    display: block;
+    width: 80%;
+    outline: none;
+    padding: 0 0 0 10px;
+    border-radius: 10px;
+    background-color: rgb(170 180 170);
+    margin: 7% 0 0 0%;
+    border-style: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    height: 36px;
+
+}
+::placeholder{
+  color: black;
+}
+.signup-btn,.login-btn{
+    width: 81%;
+    outline: none;
+    padding : 10px  0px 10px 7px; 
+    border-radius: 10px;
+    background-color: rgb(170 180 170);
+    margin:12% 0 0 1%;
+    border-style: none;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+}
+.signuphead{
+    color: rgb(170 180 170);
+    margin:2% 0 10% 29%;
+    font-size: 1.6em;
+    font-family: "Open Sans", sans-serif;
+}
+.loginbox {
+    height: 23em;
+    width: 20em;
+    margin: auto;
+    margin-top: 22vh;
+    /* margin-top: 12%; */
+    box-shadow: 0 0 18px 5px #151515;
+    border-style: none;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
+.login-form{
+    padding-left: 7%;
+    padding-top: 2%;
+}
+.login-body{
+    background-color: rgb(27, 29, 27);
+   
+}
+
+.loginname,.loginpassword{
+    display:block;
+    width: 80%;
+    outline: none;
+    padding : 10px  0px 10px 7px; 
+    border-radius: 10px;
+    background-color: rgb(121 129 121);
+    margin:7% 0 0 0%;
+    border-style: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+
+}
+::placeholder{
+  color: black;
+}
+.loginname, .loginpassword {
+    display: block;
+    width: 80%;
+    outline: none;
+    padding: 0 0 0 10px;
+    border-radius: 10px;
+    background-color: rgb(170 180 170);
+    margin: 7% 0 0 0%;
+    border-style: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    height: 36px;
+}
+.loginhead{
+    color: rgb(170 180 170);
+    margin:2% 0 14% 30%;
+    font-size: 1.6em;
+    font-family: "Open Sans", sans-serif;
+}
+.msg-area{
+    display: flex;
+    
+}
+.users{
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(32, 44, 51) ;
+}
+
+.users:hover{
+    background-color:  rgb(32, 44, 51);
+}
+
+#usernotify{
+    display: block;
+}
+
+.user-profile-pic{
+  width:30px ;
+  height:30px ;
+}
+
+
+.available-users{
+    background-color: rgb(17,27,33);
+    height: 89.4vh;
+    overflow-y: auto;
+    color: rgb(158, 154, 154);
+    width: 300px;
+
+    border-right:2px solid rgb(32, 44, 51);
+}
+#msg-box{
+    width: 1180px;
+    height: 82.2vh;
+    background-image: url('../img/wbg.jpg');
+    background-size: cover; 
+    background-position: center; 
+    border-top: 1px solid black;
+    overflow-y: auto;
+}
+
+#msg-box > :first-child {
+    margin-top: 30px;
+}
+
+#msg-box > :last-child {
+    margin-bottom: 15px;
+}
+
+/* note--->The > symbol in CSS is a child combinator, and it is used to select direct children of an element. 
+
+<div id="msg-box">
+  <div>Direct child 1</div>
+  <div>Direct child 2</div>
+  <div>
+    <div>Nested child</div>
+  </div>
+</div>
+#msg-box > div would select only the first three div elements (Direct child 1, Direct child 2, and the third direct child).
+
+#msg-box div would select all div elements, including the nested one (Nested child).
+
+
+
+*/
+.logout-area{
+    background-color:  rgb(32, 44, 51);
+    display: flex;
+    width:20px;
+    align-items:end;
+    padding: 0px 15px 20px 20px;
+}
+.logout-link,.logout-img{
+    width: 20px;
+    height: 20px;
+}
+#head{
+    height: 80px;
+    border: 1px solid black;
+
+}
+.head-dis {
+    padding: 25px;
+    font-size: 26px;
+    margin: 0;
+    color: white;
+    background-color: rgb(17,27,33);
+}
+#message-input{
+    width: 85%;
+    border-style: none;
+    padding: 20px 15px 20px 15px;
+    background-color:  rgb(32, 44, 51);
+    outline: none;
+    color: white;
+   
+}
+#message-input::placeholder{
+    color: white;
+}
+.send-msg{
+    background-color:  rgb(32, 44, 51);
+}
+#send-message-button{
+   width: 30px;
+   height: 34px;
+   margin-right: 30px;
+   cursor: pointer;
+}
+
+.send-msg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.usertext{
+    background-color:  rgb(32, 44, 51);
+    max-width : 20%;
+    width: auto; 
+    margin-top: 5px;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 5px;
+    margin-left: 2%;
+    color: rgb(158, 154, 154);
+    word-wrap: break-word;
+    border-radius: 10px;
+}
+
+.yourtext{
+    background-color: rgb(0, 92, 75);
+    max-width : 20%;
+    width: auto; 
+    margin-top: 5px;
+    padding: 10px 20px 10px 20px;
+    color:white;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    margin-left: 75%;
+    word-wrap: break-word;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+
+  }
+ .startchat{
+    color: white;
+    margin-left: 219px;
+    margin-top: 430px;
+    opacity: 0.5;
+    font-size: 74px;
+ }

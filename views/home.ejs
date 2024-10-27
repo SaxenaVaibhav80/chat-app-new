@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="/css/index.css" rel="stylesheet">
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+       <%if(!loggedIn){%>
+            <a href="/login">login</a>
+            <a href="/signup">signup</a>
+        <%}%>
+    </nav>
+    
+    <% if(loggedIn) {%>
+    <div id="head"><p class="head-dis">chat app</p></div>
+    <div class="msg-area">
+        <div class="logout-area">
+            <a href="/logout" class="logout-link"><img src="/img/exit.png" class="logout-img"></a>
+        </div>
+       
+        <div class="available-users">
+                <% user.forEach((data)=> { %>
+                    <% if(data._id!=id){ %>     
+                        <div  class="users" data-id="<%=data._id%>">
+                            <div class="profile"><img src="/img/user.png" class="user-profile-pic"></div>
+                            <%=data.firstname+"  "+data.lastname%>
+                        </div>                    
+                    <%}%>
+                 <%})%>  
+        </div>
+       
+        <div>
+            <div id="msg-box">
+    
+
+                
+            </div>
+            <div class="send-msg">
+                <input type="text" id="message-input" placeholder="Type your message here" />
+                <img src="/img/send2.png" id="send-message-button" alt="send">
+            </div>
+        </div>
+    </div>
+    <%}%>
+    
+
+
+<script src="/js/script.js"></script>
+</body>
+</html>
