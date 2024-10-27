@@ -23,8 +23,8 @@ const json = require("body-parser/lib/types/json");
 app.set("view engine","ejs")
 app.use(express.static('public'))
 app.use(express.json());
-const publicVapidKey="BCAtEJlmquZbSNlEt8HwH_WcyyB07u6NEuYN3GV7xPGFOvQYaLUvf4v1gjKFMKk3bdfUb7_YU8lIMF92A7_duxM"
-const privateVapidKey="LMUSgle9OFULFdyvVxehWXg_i_h42soq9s36to_N7qI"
+const publicVapidKey="" // replace with your keys
+const privateVapidKey="" // replace with your keys
 const  auth =(req,res,next)=>
     {
         const tokenFromCookie= req.cookies.token
