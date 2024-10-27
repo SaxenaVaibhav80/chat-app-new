@@ -2,7 +2,7 @@ const socket = io();
 let extracted_token;
 let subscription;  // Declare subscription variable here
 
-const publicVapidKey = "BCAtEJlmquZbSNlEt8HwH_WcyyB07u6NEuYN3GV7xPGFOvQYaLUvf4v1gjKFMKk3bdfUb7_YU8lIMF92A7_duxM";
+const publicVapidKey = "";// replace with your keys
 
 fetch('/login/api', {
     method: 'POST',
