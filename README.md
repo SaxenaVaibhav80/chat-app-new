@@ -4,7 +4,7 @@
 
 The **Real-Time Chat App** is a web-based chat platform that enables users to communicate with each other in real-time. Built using modern web technologies, the app provides seamless messaging functionality with an intuitive user interface.
 
-![Chat App](screenshots/chat-app.png)
+
 
 ## 🔥 Features
 
@@ -28,11 +28,11 @@ The **Real-Time Chat App** is a web-based chat platform that enables users to co
 ## 🎮 How It Works
 
 1. **User Authentication** – Users sign up or log in to access the chat rooms.
-   ![Login](screenshots/login.png)
+ 
 2. **Joining a Chat Room** – Users can join an existing chat room or create a new one.
-   ![Join Room](screenshots/join-room.png)
+  
 3. **Messaging in Real-Time** – Users can send and receive messages instantly.
-   ![Chat](screenshots/chat.png)
+  
 4. **Notifications & Typing Indicator** – Users get notified when someone is typing or when they receive a message.
 5. **Chat History** – Users can view previously sent messages.
 
@@ -46,7 +46,7 @@ The **Real-Time Chat App** is a web-based chat platform that enables users to co
 2. **Install dependencies:**
    ```sh
    npm init
-   npm i socket.io web-push nodemon --save-dev ejs express mongoose 
+   npm i socket.io web-push nodemon --save-dev ejs express mongoose  bcrypt jsonwebtoken dotenv
    
    ```
 3. **Setup Environment Variables:**
